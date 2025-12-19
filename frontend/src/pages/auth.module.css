@@ -1,0 +1,126 @@
+/* auth.module.css */
+
+.page{
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+  background: var(--bg);
+}
+
+.card{
+  width: min(860px, 92vw);
+  text-align: center;
+}
+
+.logoBox{
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 14px;
+  border-radius: 14px;
+  border: 2px solid rgba(255,59,59,0.75);
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.brand{
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 28px;
+  margin: 0 0 18px;
+}
+
+.bigTitle{
+  color: var(--accent);
+  font-weight: 900;
+  font-size: clamp(44px, 6vw, 64px);
+  margin: 0 0 6px;
+}
+
+.subTitle{
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+
+.actionsRow{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.btnPrimary{
+  background: var(--mint);
+  border: none;
+  color: #111;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.btnGhost{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.55);
+  color: var(--text);
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.form{
+  width: min(980px, 92vw);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 18px;
+  margin-top: 10px;
+}
+
+.field, .fieldWide{
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,59,59,0.45);
+  background: rgba(0,0,0,0.08);
+  color: var(--text);
+  padding: 0 14px;
+  outline: none;
+}
+
+.fieldWide{
+  grid-column: 1 / -1;
+}
+
+.field::placeholder, .fieldWide::placeholder{
+  color: rgba(255,255,255,0.55);
+  font-weight: 600;
+}
+
+.btnWide{
+  width: 100%;
+  margin-top: 16px;
+  height: 46px;
+  border-radius: 10px;
+  border: none;
+  background: var(--mint);
+  color: #111;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.helper{
+  margin-top: 14px;
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+}

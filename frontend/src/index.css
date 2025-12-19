@@ -1,0 +1,39 @@
+/* index.css - Global reset + theme */
+
+:root{
+  --bg: #4B1C3D;            /* البنفسجي الغامق */
+  --panel: rgba(255,255,255,0.06);
+  --panel-border: rgba(255,255,255,0.10);
+
+  --accent: #FF3B3B;        /* أحمر */
+  --mint: #A6CBAA;          /* أخضر فاتح للأزرار */
+
+  --text: #F4F4F4;
+  --muted: rgba(255,255,255,0.65);
+
+  --radius: 14px;
+  --shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+#root{
+  height: 100%;
+}
+
+a{
+  color: var(--text);
+  text-decoration: underline;
+}
+a:hover{ opacity: 0.9; }
